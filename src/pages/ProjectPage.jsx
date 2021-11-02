@@ -93,6 +93,16 @@ const ProjectPage = () => {
         )
     }
 
+    const deleteProject = async () => {
+        await fetch(`${process.env.REACT_APP_API_URL}projects/${project_id}`, 
+        {   
+            method: "delete",
+            headers: {
+                "Authorization": `token ${window.localStorage.getItem("token")}`
+            }
+        })
+        }
+
     console.log("Project data is:",projectData)
 
     return (
@@ -101,6 +111,10 @@ const ProjectPage = () => {
             localStorage.getItem('token') 
             && isEditing == false
             && <button onClick={() => setIsEditing(true)}>Edit Project</button>
+            }
+            {
+            localStorage.getItem('token')
+            && <button onClick={deleteProject}>Delete Project</button>  
             }
             <div>
             {
@@ -163,7 +177,7 @@ const ProjectPage = () => {
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="ControlInput">
-                            <Form.Label htmlFor="IsOpen">Category</Form.Label>
+                            <Form.Label htmlFor="Category">Category</Form.Label>
                             <Form.Select aria-label="Default select example"
                             onChange={handleChange}>
                                 <option>{projectData.category}</option>

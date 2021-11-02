@@ -145,8 +145,8 @@ const HomePage = () => {
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="ControlInput">
-                            <Form.Label htmlFor="IsOpen">Category</Form.Label>
-                            <Form.Select aria-label="Default select example"
+                            <Form.Label htmlFor="Category">Category</Form.Label>
+                            <Form.Select  id="category"aria-label="Default select example"
                             onChange={handleChange}>
                                 <option>{projectData.category}</option>
                                 <option value="1">Front-end Website Design</option>
@@ -203,8 +203,10 @@ const HomePage = () => {
             }
             </div>
         </div>
-   
+        
+        
     );
+
     
 }
 
