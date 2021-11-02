@@ -1,38 +1,72 @@
-.App {
+#project-list {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.centre-page {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.HomePageCards {
+  padding-left: 50%;
+}
+
+.centre-text {
   text-align: center;
+  vertical-align: middle;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#background-box {
+  background-color: #f8f9f9;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#project-img {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Login page styling */
+
+.container {
+  display: grid;
+  padding: 2%;
+}
+
+.left-half {
+  background: #87cefa;
+  grid-column: 1;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.right-half {
+  border: solid #87cefa;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+  grid-column: 2;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+article {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 1rem;
+}
+
+/* Home Page Styline */
+
+#center-project-cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
