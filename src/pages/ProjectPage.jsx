@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Form,Button } from 'react-bootstrap';
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
 const ProjectPage = () => {
     const [projectData, setProjectData] = useState({pledges: [] });
     const [isEditing, setIsEditing] = useState(false);
+    const history = useHistory();
 
     const { id: project_id } = useParams();
     
@@ -94,6 +95,7 @@ const ProjectPage = () => {
     }
 
     const deleteProject = async () => {
+        console.log("deleting")
         await fetch(`${process.env.REACT_APP_API_URL}projects/${project_id}`, 
         {   
             method: "delete",
@@ -101,7 +103,9 @@ const ProjectPage = () => {
                 "Authorization": `token ${window.localStorage.getItem("token")}`
             }
         })
-        }
+        console.log("deleted")
+        history.push("/")
+    }
 
     console.log("Project data is:",projectData)
 
