@@ -90,32 +90,3 @@ function LoginForm() {
 }
 
 export default LoginForm
-
-// <form>
-        //     <div>
-        //         <h3>Login</h3>
-        //     </div>
-        //     <div class="container">
-        //         <div>
-        //         <label htmlFor="username">Username:</label>
-        //         <input
-        //             type="text"
-        //             id="username"
-        //             placeholder="Enter username"
-        //             onChange={handleChange}
-        //         />
-        //         </div>
-        //         <div>
-        //         <label htmlFor="password">Password:</label>
-        //         <input
-        //             type="password"
-        //             id="password"
-        //             placeholder="Password"
-        //             onChange={handleChange}
-        //         />
-        //         </div>
-        //     </div>
-        //     <button type="submit" onClick={handleSubmit}> 
-        //     Login
-        //     </button>
-        // </form>

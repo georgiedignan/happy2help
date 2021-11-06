@@ -149,10 +149,11 @@ const HomePage = () => {
                             <Form.Select  id="category"aria-label="Default select example"
                             onChange={handleChange}>
                                 <option>{projectData.category}</option>
-                                <option value="1">Front-end Website Design</option>
-                                <option value="2">Back-end Design</option>
-                                <option value="3">Mobile application Design</option>
-                                <option value="4">Other</option>
+                                <option value="Front-end Website Design">Front-end Website Design</option>
+                                <option value="Back-end Design">Back-end Design</option>
+                                <option value="Mobile application Design">Mobile application Design</option>
+                                <option value="Data Science">Data Science</option>
+                                <option value="Other">Other</option>
                             </Form.Select>
                         </Form.Group>
 
@@ -168,7 +169,7 @@ const HomePage = () => {
                         </Form.Group>
 
                         <section class="container">
-                            <div class="left-half">
+                            <div id="left-half_addProject">
                                 <Button 
                                     variant="primary" 
                                     type="submit"
@@ -177,7 +178,7 @@ const HomePage = () => {
                                 </Button>
                             </div>
 
-                            <div class="right-half">
+                            <div id="right-half_addProject">
                                 <Button 
                                     variant="primary"
                                     onClick={() => setAddProject(false)}

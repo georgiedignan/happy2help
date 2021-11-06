@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Assignment requirements.
+
+Link to github repo: https://github.com/georgiedignan/happy2help
+
+Link to deployed app: https://secret-fjord-82205.herokuapp.com/
+
+Screenshot of homepage: 
+
+Screenshot of project creation form:
+<img width="487" alt="Add_Project" src="https://user-images.githubusercontent.com/86653494/140592784-7d0588bb-9e43-4d05-954c-91319d2fb1b9.png">
+
+Screenshot of project with pledges:
+
+Note: haven't got the functionality for the final requirement

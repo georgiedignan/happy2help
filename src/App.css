@@ -63,10 +63,35 @@ article {
   padding: 1rem;
 }
 
-/* Home Page Styline */
+/* Home Page Styling */
 
 #center-project-cards {
   display: flex;
 }
+
+/* Project card styling */
+
+
+#left-half_addProject {
+  /* background: #87cefa; */
+  grid-column: 1;
+  /* border-top-left-radius: 5%; */
+  /* border-bottom-left-radius: 5%; */
+  text-align: center;
+  width: 100%;
+  /* font-family: 'Source Code Pro', monospace; */
+}
+
+#right-half_addProject {
+  /* border: solid #87cefa; */
+  /* border-top-right-radius: 5%; */
+  /* border-bottom-right-radius: 5%; */
+  grid-column: 2;
+  width: 100%;
+  /* font-family: 'Hind Siliguri', sans-serif; */
+}
+
+
+
 
 

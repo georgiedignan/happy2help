@@ -182,13 +182,14 @@ const ProjectPage = () => {
 
                         <Form.Group className="mb-3" controlId="ControlInput">
                             <Form.Label htmlFor="Category">Category</Form.Label>
-                            <Form.Select aria-label="Default select example"
+                            <Form.Select  id="category"aria-label="Default select example"
                             onChange={handleChange}>
                                 <option>{projectData.category}</option>
-                                <option value="1">Front-end Website Design</option>
-                                <option value="2">Back-end Design</option>
-                                <option value="3">Mobile application Design</option>
-                                <option value="4">Other</option>
+                                <option value="Front-end Website Design">Front-end Website Design</option>
+                                <option value="Back-end Design">Back-end Design</option>
+                                <option value="Mobile application Design">Mobile application Design</option>
+                                <option value="Data Science">Data Science</option>
+                                <option value="Other">Other</option>
                             </Form.Select>
                         </Form.Group>
 
@@ -204,7 +205,7 @@ const ProjectPage = () => {
                         </Form.Group>
 
                         <section class="container">
-                            <div class="left-half">
+                            <div id="left-half_addProject">
                                 <Button 
                                     variant="primary" 
                                     type="submit"
@@ -213,7 +214,7 @@ const ProjectPage = () => {
                                 </Button>
                             </div>
 
-                            <div class="right-half">
+                            <div id="right-half_addProject">
                                 <Button 
                                     variant="primary"
                                     onClick={() => setIsEditing(false)}
@@ -241,41 +242,4 @@ const ProjectPage = () => {
 export default ProjectPage
 
 
-                //     <form onSubmit={handleSubmit}>
-                //     <div>
-                //         <div>
-                //         <label htmlFor="IsOpen">Is_Open:</label>
-                //         <input
-                //             value={projectData.is_open}
-                //             type="text"
-                //             id="is_open"
-                //             placeholder="IsOpen"
-                //             onChange={handleChange}
-                //         />
-                //         </div>
-                //         <div>
-                //         <label htmlFor="Image">Image:</label>
-                //         <input
-                //             value={projectData.image}
-                //             type="text"
-                //             id="image"
-                //             placeholder="Image"
-                //             onChange={handleChange}
-                //         />
-                //         </div>
-                //         <div>
-                //         <label htmlFor="Category">Category:</label>
-                //         <input
-                //             value={projectData.category}
-                //             type="text"
-                //             id="category"
-                //             placeholder="Category"
-                //             onChange={handleChange}
-                //         />
-                //         </div>
-                //     </div>
-                //     <button type="submit">Submit</button>
-                //     <button onClick={() => setIsEditing(false)}>Cancel</button>
-                    
-                // </form>
-
+        
